@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éléments livrables – SAé14</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- 🔧 adapte le chemin si besoin -->
+</head>
+
+<body class="livrables">
+
+    <header>
+        <div class="header-container">
+            <img src="images/drag_hi.png" alt="Logo Thibault" class="header-logo">
+            <h1>Éléments livrables</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="eportfolio.html">ePortfolio</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="livrables.html" class="active">Éléments livrables</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="mentions_legales.html">Mentions légales</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="livrables-section">
+            <h2>Présentation des éléments livrables</h2>
+            <hr>
+
+            <h3>Plan du site et structure filaire</h3>
+            <p>Le plan du site permet de visualiser la hiérarchie des pages du ePortfolio.</p>
+            <pre>
+ePortfolio/
+│
+├── index.html
+├── parcours.html
+├── projets.html
+├── competences.html
+├── livrables.html
+└── plan.html
+      </pre>
+
+            <hr>
+
+            <h3>Arborescence physique du site</h3>
+            <p>Organisation des fichiers et dossiers du site web statique :</p>
+            <div class="img-container">
+                <img src="images/arborescence_fichiers.png" alt="Arborescence du site web" usemap="#planFichiers"
+                    class="img-large">
+
+                <map name="planFichiers">
+                    <!-- Pages principales -->
+                    <area shape="rect" coords="163,2,279,61" href="index.html" alt="Accueil">
+                    <area shape="rect" coords="301,1,420,61" href="eportfolio.html" alt="ePortfolio">
+                    <area shape="rect" coords="422,1,561,61" href="about.html" alt="About Me">
+                    <area shape="rect" coords="585,1,704,61" href="parcours.html" alt="Parcours">
+                    <area shape="rect" coords="732,0,851,60" href="livrables.html" alt="Éléments livrables">
+                    <area shape="rect" coords="871,1,990,61" href="contact.html" alt="Contact">
+                    <area shape="rect" coords="1011,0,1150,60" href="mentions_legales.html" alt="Mentions légales">
+                </map>
+
+                <p><em>Survolez les zones pour voir les titres, puis cliquez pour accéder aux pages
+                        <strong>html</strong>.</em></p>
+            </div>
+
+
+            <hr>
+
+            <h3>Architecture et charte graphique</h3>
+            <p>
+                Le site utilise une structure HTML5 sémantique avec les balises <code>&lt;header&gt;</code>,
+                <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> et
+                <code>&lt;footer&gt;</code>.
+                La charte graphique repose sur :
+            </p>
+            <ul>
+                <li>Couleurs dominantes : rouge, gris foncé et blanc</li>
+                <li>Typographie principale : <strong>Poppins</strong>, sans-serif</li>
+                <li>Effets d’ombre, coins arrondis et transitions au survol</li>
+                <li>Design responsive via media queries pour les écrans &lt; 768px</li>
+            </ul>
+
+            <hr>
+
+            <h3>Responsive Web Design</h3>
+            <p>
+                Le site a été testé sur différents outils en ligne pour vérifier sa compatibilité mobile et tablette :
+            </p>
+            <ul>
+                <li><a href="https://www.responsinator.com/" target="_blank">Responsinator</a></li>
+                <li><a href="https://www.websiteplanet.com/fr/webtools/responsive-checker/" target="_blank">Website
+                        Planet</a></li>
+                </br>
+                <img src="images/responsive.jpg" alt="Aperçu du test Responsinator" class="img">
+                <li><a href="https://gtmetrix.com/" target="_blank">GTMetrix</a> pour la performance</li>
+            </ul>
+
+            <hr>
+
+            <h3>Gestion de projet</h3>
+            <p>Le suivi du projet a été réalisé avec :</p>
+            <ul>
+                <li><strong>Diagramme de Gantt</strong> pour la planification</li>
+            </ul>
+            <div class="img-container">
+                <img src="images/gantt.png" alt="Diagramme de Gantt" class="img-large">
+            </div>
+
+            <hr>
+        </section>
+    </main>
+
+    <footer>
+        <aside class="validation-badges">
+            <p><em>Validation de la page HTML5 et du CSS3</em></p>
+            <div class="badges-container">
+                <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/html5-validator-badge-blue.png" alt="Badge de validation HTML5" width="120"
+                        loading="lazy">
+                </a>
+                <a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Badge de validation CSS3"
+                        width="120" loading="lazy">
+                </a>
+            </div>
+        </aside>
+        <p>© 2025 Larroque Thibault, tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>
