@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <meta name="description" content="Présentation personnelle de Thibault Larroque : caractéristiques, hobbies et motivations pour le BUT R&T.">
+    <title>About Me - Mon ePortfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,78 +16,69 @@
     <header>
         <div class="header-container">
             <img src="images/drag_hi.png" alt="Logo Thibault" class="header-logo">
-            <h1>About me</h1>
+            <h1>About Me</h1>
         </div>
-        <nav>
+        <nav aria-label="Navigation principale">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="eportfolio.html">ePortfolio</a></li>
-                <li><a href="about.html" class="active">About Me</a></li>
+                <li><a href="about.html" class="active" aria-current="page">About Me</a></li>
                 <li><a href="parcours.html">Parcours</a></li>
-                <li><a href="livrables.html">Éléments livrables</a></li>
+                <li><a href="livrables.html">Livrables</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="mentions_legales.html">Mentions légales</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="aboutme">
-            <h2>About Me</h2>
+    <main class="about-grid">
 
-            <article>
-                <img src="images/profil.jpg" alt="Photo de Thibault" class="img-left">
-                <h3>Personal Characteristics</h3>
-                <p>I am an optimist person. I like drawing.</p>
-            </article>
+        <section class="about-left">
+            <h2>Qui suis-je ?</h2>
+            <img src="images/profil.jpg" alt="Photo de Thibault" class="img-small">
+            <h3>Personal Characteristics</h3>
+            <p>I am an optimist person. I like drawing.</p>
+            <h3>Why I Chose BUT R&amp;T</h3>
+            <p>I chose the Networks and Telecommunications program with the aim of training in cybersecurity.</p>
+        </section>
 
-            <article>
+        <aside class="about-right">
+            <section>
                 <h3>Hobbies</h3>
-                <p>In my free time, I like to play video games or draw.
-                    </br> I have experience in archery
-                </p>
+                <p>In my free time, I like to play video games or draw. I have experience in archery.</p>
                 <video controls>
                     <source src="videos/clip.mp4" type="video/mp4">
                     Votre navigateur ne supporte pas la lecture vidéo.
                 </video>
+            </section>
 
-            </article>
-
-            <article>
-                <h3>Why I Chose BUT R&T</h3>
-                <p>I chose the Networks and Telecommunications program with the aim of training in cybersecurity.</p>
-            </article>
-
-            <article>
+            <section>
                 <h3>Favorite Quote</h3>
                 <blockquote>
-                    <p>"Lesson number one, aim at them with the sharp end." Jon Snow, Game of Thrones</p>
+                    <p>"Lesson number one, aim at them with the sharp end." — Jon Snow, Game of Thrones</p>
                 </blockquote>
-                <p>I appreciate this quote because it's my favorite serie and the character have a good evolution
-                    (bastard to king).</p>
-            </article>
-        </section>
+                <p>I appreciate this quote because it's my favorite series and the character has a great evolution (bastard to king).</p>
+            </section>
+        </aside>
+
     </main>
 
     <footer>
-        <aside id="validation" class="validation-badges">
-            <p><em>Validation de la page HTML5 et du CSS3</em></p>
+        <div class="validation-badges">
+            <p><em>Validation HTML5 et CSS3</em></p>
             <div class="badges-container">
-                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fvotre-nom.atwebpages.com%2FTP_R109%2Findex.html"
+                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fleviathan63.github.io%2Feportfolio%2Fabout.html"
                     target="_blank" rel="noopener noreferrer">
-                    <img src="images/html5-validator-badge-blue.png" alt="Badge de validation HTML5" width="120"
-                        loading="lazy">
+                    <img src="images/html5-validator-badge-blue.png" alt="Badge de validation HTML5" width="70" loading="lazy">
                 </a>
-
-                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvotre-nom.atwebpages.com%2FTP_R109%2Fstyles%2Fstyle.css"
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fleviathan63.github.io%2Feportfolio%2Fcss%2Fstyle.css"
                     target="_blank" rel="noopener noreferrer">
-                    <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Badge de validation CSS3"
-                        width="120" loading="lazy">
+                    <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Badge de validation CSS3" width="70" loading="lazy">
                 </a>
             </div>
-        </aside>
+        </div>
         <p>© 2025 Larroque Thibault, tous droits réservés.</p>
     </footer>
-</body>
 
+</body>
 </html>
