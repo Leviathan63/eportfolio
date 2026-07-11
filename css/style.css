@@ -279,12 +279,8 @@ footer {
   width: 70px;
   opacity: 0.8;
   border-radius: 6px;
-  transition: opacity 0.3s ease;
 }
 
-.conteneur-badges img:hover {
-  opacity: 1;
-}
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
