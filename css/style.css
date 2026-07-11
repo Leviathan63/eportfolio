@@ -40,7 +40,7 @@ img, video {
 /* ===== HEADER ===== */
 header {
   background: linear-gradient(135deg, #c00a0a, #000);
-  color: #fff;
+  color: #ffffff;
   padding: 2rem 1rem;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -61,7 +61,7 @@ header {
   height: 70px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #fff;
+  border: 2px solid #ffffff;
   transition: transform 0.3s ease;
 }
 
@@ -275,8 +275,24 @@ footer p {
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.badges-container img:hover {
-  opacity: 1;
+/* ===== SOCIAL LINKS ===== */
+.social-links {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 1.6rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: var(--primary);
+  transform: scale(1.15);
 }
 
 /* ===== GRID LAYOUTS ===== */
