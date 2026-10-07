@@ -11,6 +11,7 @@ ePortfolio/
 ├── index.php
 ├── parcours.php
 ├── eportfolio.php
+├── competences.php
 ├── livrables.php
 ├── about.php
 ├── contact.php
@@ -48,19 +49,18 @@ ePortfolio/
     </main>
 
     <section class="livrables-pleine-largeur">
-        <h2>Arborescence physique</h2>
-        <p>Organisation des fichiers et dossiers :</p>
-        <img src="images/arborescence_fichiers.png" alt="Arborescence du site web" usemap="#planFichiers" class="image-carte">
-        <map name="planFichiers">
-            <area shape="rect" coords="155,5,295,55" href="index.php" alt="Accueil">
-            <area shape="rect" coords="310,5,420,55" href="eportfolio.php" alt="ePortfolio">
-            <area shape="rect" coords="435,5,565,55" href="about.php" alt="About Me">
-            <area shape="rect" coords="580,5,695,55" href="parcours.php" alt="Parcours">
-            <area shape="rect" coords="710,5,845,55" href="livrables.php" alt="Éléments livrables">
-            <area shape="rect" coords="860,5,960,55" href="contact.php" alt="Contact">
-            <area shape="rect" coords="975,5,1125,55" href="mentions_legales.php" alt="Mentions légales">
-        </map>
-        <p><em>Survolez les zones puis cliquez pour accéder aux pages <strong>HTML</strong>.</em></p>
+        <h2>Accès aux pages</h2>
+        <p>Retrouvez toutes les pages principales du site :</p>
+        <ul class="liens-rapides" aria-label="Pages du site">
+            <li><a href="index.php">Accueil</a></li>
+            <li><a href="eportfolio.php">ePortfolio</a></li>
+            <li><a href="about.php">À propos</a></li>
+            <li><a href="parcours.php">Parcours</a></li>
+            <li><a href="competences.php">Compétences et projets</a></li>
+            <li><a href="livrables.php">Livrables</a></li>
+            <li><a href="contact.php">Contact</a></li>
+            <li><a href="mentions_legales.php">Mentions légales</a></li>
+        </ul>
     </section>
 
     <section class="livrables-pleine-largeur">

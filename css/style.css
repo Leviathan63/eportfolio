@@ -15,6 +15,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   background-color: var(--bg);
   color: var(--text);
@@ -53,11 +59,6 @@ header h1 {
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #fff;
-  transition: transform 0.3s ease;
-}
-
-.logo-entete:hover {
-  transform: rotate(8deg) scale(1.05);
 }
 
 /* ===== NAVIGATION ===== */
@@ -73,6 +74,11 @@ nav a {
 nav a:hover,
 nav a.active {
   border-bottom-color: #fff;
+}
+
+a:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
 }
 
 /* ===== LIENS SOCIAUX ===== */
@@ -113,9 +119,31 @@ section h2 {
   font-size: 1.6rem;
 }
 
+.titre-groupe {
+  display: inline-block;
+  color: var(--primary);
+  border-left: 4px solid var(--primary);
+  padding-left: 0.6rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+}
+
 section h3 {
   color: var(--primary-soft);
   margin-bottom: 0.6rem;
+}
+
+/* ===== LIENS ET CODE DANS LES SECTIONS ===== */
+section a {
+  color: var(--primary-soft);
+}
+
+section a:hover {
+  color: #fff;
+}
+
+code {
+  color: var(--primary-soft);
 }
 
 /* ===== IMAGES ===== */
@@ -144,6 +172,12 @@ section h3 {
 .image-grande.gantt {
   max-width: 100%;
   width: 100%;
+}
+
+.blockquote {
+  border-left: 4px solid var(--primary);
+  padding-left: 0.6rem;
+  margin-bottom: 2rem;
 }
 
 /* ===== VIDEO ===== */
@@ -178,10 +212,6 @@ video {
 }
 
 /* ===== LIVRABLES ===== */
-.livrables section {
-  border-left: 5px solid var(--primary);
-}
-
 .livrables section h2 {
   color: var(--primary-soft);
   border-left-color: var(--primary-soft);
@@ -283,7 +313,7 @@ footer {
 
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   header h1 {
     font-size: 1.7rem;
   }
@@ -295,7 +325,14 @@ footer {
   }
 
   .badges-validation {
+    position: static !important;
     align-items: center;
+    margin: 0 0 0.75rem !important;
+    width: 100%;
+  }
+
+  footer {
+    gap: 0.75rem;
   }
 
   .conteneur-badges {

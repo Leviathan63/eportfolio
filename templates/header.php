@@ -1,6 +1,11 @@
 <?php
-// Cache navigateur pour les pages PHP (30 jours)
-header('Cache-Control: public, max-age=2592000');
+// Cache navigateur pour les pages PHP : 1 heure.
+// (30 jours étaient trop longs : les visiteurs ne voyaient pas les mises à jour.)
+// Les CSS, images et vidéos peuvent garder un cache plus long, réglé côté serveur.
+$cacheSeconds = 3600;
+if (!headers_sent()) {
+    header('Cache-Control: public, max-age=' . $cacheSeconds);
+}
 
 if (!isset($pageTitle))       { $pageTitle = "Mon ePortfolio"; }
 if (!isset($pageDescription)) { $pageDescription = ""; }
