@@ -53,11 +53,6 @@ header h1 {
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid #fff;
-  transition: transform 0.3s ease;
-}
-
-.logo-entete:hover {
-  transform: rotate(8deg) scale(1.05);
 }
 
 /* ===== NAVIGATION ===== */
@@ -178,10 +173,6 @@ video {
 }
 
 /* ===== LIVRABLES ===== */
-.livrables section {
-  border-left: 5px solid var(--primary);
-}
-
 .livrables section h2 {
   color: var(--primary-soft);
   border-left-color: var(--primary-soft);
