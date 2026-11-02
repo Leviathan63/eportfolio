@@ -92,6 +92,71 @@ nav a.active {
   border-bottom: none;
 }
 
+/* ===== INFOS EN-TETE (haut gauche) ===== */
+.infos-entete {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.badge-statut {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(10, 10, 10, 0.8);
+  border: 1px solid #2ecc71;
+  border-radius: 999px;
+}
+
+.point-statut {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2ecc71;
+}
+
+.bouton-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.bouton-cv:hover {
+  background: #fff;
+  color: var(--primary);
+}
+
+/* ===== PAGE 404 ===== */
+.code-erreur {
+  font-size: clamp(4rem, 15vw, 8rem);
+  font-weight: 600;
+  color: var(--primary);
+  line-height: 1;
+}
+
+/* Titre centré : la barre gauche de "section h2" est neutralisée */
+.titre-erreur {
+  border-left: none;
+  padding-left: 0;
+}
+
 /* ===== SECTIONS ===== */
 section {
   background: var(--surface);
@@ -282,6 +347,15 @@ footer {
   .liens-sociaux {
     position: static;
     justify-content: center;
+    margin-top: 0.8rem;
+  }
+
+  .infos-entete {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin-top: 0.8rem;
   }
 
