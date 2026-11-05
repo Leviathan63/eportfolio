@@ -194,8 +194,12 @@ section h3 {
   box-shadow: 0 6px 20px rgba(0,0,0,0.5);
 }
 
+.conteneur-carte {
+  overflow-x: auto;
+}
+
 .image-carte {
-  max-width: 100%;
+  max-width: none;
   margin: 1rem auto;
   border-radius: 10px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.4);
