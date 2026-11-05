@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Éléments livrables de la SAé14 : plan du site, arborescence, charte graphique, responsive et gestion de projet.">
-    <title>Éléments livrables – SAé14</title>
+    <title>Livrables | Thibault Larroque</title>
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="ePortfolio de Thibault Larroque">
+    <meta property="og:title" content="Livrables | Thibault Larroque">
+    <meta property="og:description" content="Éléments livrables de la SAé14 : plan du site, arborescence, charte graphique, responsive et gestion de projet.">
+    <meta property="og:url" content="http://larroque.atwebpages.com/livrables.html">
+    <meta property="og:image" content="http://larroque.atwebpages.com/images/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Thibault Larroque, étudiant en BUT Réseaux et Télécommunications">
+    <link rel="icon" type="image/png" href="images/drag_hi.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -25,6 +36,7 @@
                 <li><a href="eportfolio.html">ePortfolio</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="projets.html">Projets</a></li>
                 <li><a href="livrables.html" class="active" aria-current="page">Livrables</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="mentions_legales.html">Mentions légales</a></li>
@@ -51,6 +63,7 @@ ePortfolio/
 │
 ├── index.html
 ├── parcours.html
+├── projets.html
 ├── eportfolio.html
 ├── livrables.html
 ├── about.html
@@ -75,7 +88,7 @@ ePortfolio/
                 </section>
             </div>
 
-            <aside class="col-12 col-md-4">
+            <div class="col-12 col-md-4">
                 <section>
                     <h2>Responsive Web Design</h2>
                     <p>Le site a été testé sur :</p>
@@ -86,51 +99,50 @@ ePortfolio/
                     </ul>
                     <img src="images/responsive.jpg" alt="Aperçu du test Responsinator" class="image-grande" width="390" height="804" loading="lazy">
                 </section>
-            </aside>
+            </div>
 
         </div>
+
+        <section class="livrables-pleine-largeur">
+            <h2>Arborescence physique</h2>
+            <p>Organisation des fichiers et dossiers :</p>
+            <div class="conteneur-carte">
+                <img src="images/arborescence_fichiers.png" alt="Arborescence du site web" usemap="#planFichiers" class="image-carte" width="1050" height="560" loading="lazy">
+                <map name="planFichiers">
+                    <area shape="rect" coords="130,10,235,60" href="index.html" alt="Accueil">
+                    <area shape="rect" coords="245,10,350,60" href="eportfolio.html" alt="ePortfolio">
+                    <area shape="rect" coords="360,10,465,60" href="about.html" alt="About Me">
+                    <area shape="rect" coords="475,10,580,60" href="parcours.html" alt="Parcours">
+                    <area shape="rect" coords="590,10,695,60" href="projets.html" alt="Projets">
+                    <area shape="rect" coords="705,10,810,60" href="livrables.html" alt="Éléments livrables">
+                    <area shape="rect" coords="820,10,925,60" href="contact.html" alt="Contact">
+                    <area shape="rect" coords="935,10,1040,60" href="mentions_legales.html" alt="Mentions légales">
+                    <area shape="rect" coords="245,80,350,130" href="404.html" alt="Page 404">
+                </map>
+            </div>
+            <p><em>Survolez les zones puis cliquez pour accéder aux pages <strong>HTML</strong>.</em></p>
+        </section>
+
+        <section class="livrables-pleine-largeur">
+            <h2>Gestion de projet</h2>
+            <p>Suivi réalisé avec un <strong>diagramme de Gantt</strong> :</p>
+            <img src="images/gantt.png" alt="Diagramme de Gantt" class="image-grande gantt" width="1839" height="560" loading="lazy">
+        </section>
     </main>
-
-    <section class="livrables-pleine-largeur">
-        <h2>Arborescence physique</h2>
-        <p>Organisation des fichiers et dossiers :</p>
-        <div class="conteneur-carte">
-            <img src="images/arborescence_fichiers.png" alt="Arborescence du site web" usemap="#planFichiers" class="image-carte" width="1050" height="490" loading="lazy">
-            <map name="planFichiers">
-                <area shape="rect" coords="130,10,235,60" href="index.html" alt="Accueil">
-                <area shape="rect" coords="245,10,350,60" href="eportfolio.html" alt="ePortfolio">
-                <area shape="rect" coords="360,10,465,60" href="about.html" alt="About Me">
-                <area shape="rect" coords="475,10,580,60" href="parcours.html" alt="Parcours">
-                <area shape="rect" coords="590,10,695,60" href="livrables.html" alt="Éléments livrables">
-                <area shape="rect" coords="705,10,810,60" href="contact.html" alt="Contact">
-                <area shape="rect" coords="820,10,925,60" href="mentions_legales.html" alt="Mentions légales">
-                <area shape="rect" coords="935,10,1040,60" href="404.html" alt="Page 404">
-            </map>
-        </div>
-        <p><em>Survolez les zones puis cliquez pour accéder aux pages <strong>HTML</strong>.</em></p>
-    </section>
-
-    <section class="livrables-pleine-largeur">
-        <h2>Gestion de projet</h2>
-        <p>Suivi réalisé avec un <strong>diagramme de Gantt</strong> :</p>
-        <img src="images/gantt.png" alt="Diagramme de Gantt" class="image-grande gantt" width="1839" height="560" loading="lazy">
-    </section>
 
     <footer class="d-flex align-items-center justify-content-center flex-wrap text-center">
         <div class="badges-validation position-absolute start-0 ms-3">
             <p><em>Validation HTML5 et CSS3</em></p>
             <div class="conteneur-badges">
-                <a href="https://validator.w3.org/nu/" target="_blank" rel="noopener noreferrer">
+                <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Flarroque.atwebpages.com%2Flivrables.html" target="_blank" rel="noopener noreferrer">
                     <img src="images/html5-validator-badge-blue.png" alt="Badge de validation HTML5" width="70" height="25" loading="lazy">
                 </a>
-                <a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener noreferrer">
-                    <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Badge de validation CSS3" width="70" loading="lazy">
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Flarroque.atwebpages.com%2Fcss%2Fstyle.css" target="_blank" rel="noopener noreferrer">
+                    <img src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Badge de validation CSS3" width="70" height="25" loading="lazy">
                 </a>
             </div>
         </div>
         <p class="mb-0">© 2026 Larroque Thibault, tous droits réservés.</p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

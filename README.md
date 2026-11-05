@@ -9,10 +9,11 @@ Il présente mon parcours, mes motivations et les éléments livrables du projet
 
 | Page | Contenu |
 | --- | --- |
-| `index.html` | Accueil : pourquoi ce portfolio, qui suis-je |
+| `index.html` | Accueil : présentation, recherche d'alternance, pourquoi ce portfolio |
 | `eportfolio.html` | Définition, objectifs et contexte du ePortfolio |
 | `about.html` | Présentation personnelle, hobbies, citation favorite |
-| `parcours.html` | Bac STI2D, projet de spécialité, choix du BUT R&T |
+| `parcours.html` | Bac STI2D, expérience BAFA, choix du BUT R&T |
+| `projets.html` | Projet épicerie autonome (RFID, température), autres projets |
 | `livrables.html` | Plan du site, charte graphique, responsive, arborescence, Gantt |
 | `contact.html` | Email, téléphone et réseaux |
 | `mentions_legales.html` | Mentions légales |
@@ -30,7 +31,7 @@ eportfolio/
 
 ## Technologies
 
-- HTML5 sémantique (`header`, `nav`, `main`, `section`, `aside`, `footer`)
+- HTML5 sémantique (`header`, `nav`, `main`, `section`, `footer`)
 - CSS3 + [Bootstrap 5.3](https://getbootstrap.com/) pour le responsive
 - Police [Poppins](https://fonts.google.com/specimen/Poppins) et icônes [Font Awesome](https://fontawesome.com/)
 
