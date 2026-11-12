@@ -33,7 +33,7 @@ eportfolio/
 
 - HTML5 sémantique (`header`, `nav`, `main`, `section`, `footer`)
 - CSS3 + [Bootstrap 5.3](https://getbootstrap.com/) pour le responsive
-- Police [Poppins](https://fonts.google.com/specimen/Poppins) et icônes [Font Awesome](https://fontawesome.com/)
+- Police [Poppins](https://fonts.google.com/specimen/Poppins) et icônes [Font Awesome](https://fontawesome.com/) intégrées en SVG
 
 Toutes les pages sont valides selon le [validateur HTML du W3C](https://validator.w3.org/nu/),
 et la feuille de style selon le [validateur CSS du W3C](https://jigsaw.w3.org/css-validator/).
@@ -45,7 +45,6 @@ Aucune installation nécessaire : ouvrir `index.html` dans un navigateur.
 ## Branches
 
 - `main` : version statique en HTML (celle-ci)
-- `dev` : version PHP avec templates (en-tête, menu et pied de page partagés)
 
 ## Auteur
 
