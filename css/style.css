@@ -175,12 +175,6 @@ nav a.active {
   line-height: 1;
 }
 
-/* Titre centré : la barre gauche de "section h2" est neutralisée */
-.titre-erreur {
-  border-left: none;
-  padding-left: 0;
-}
-
 /* ===== SECTIONS ===== */
 section {
   background: var(--surface);
@@ -191,14 +185,12 @@ section {
 
 section h2 {
   color: var(--primary);
-  border-left: 4px solid var(--primary);
-  padding-left: 0.6rem;
   margin-bottom: 1rem;
   font-size: 1.6rem;
 }
 
 section h3 {
-  color: var(--text);
+  color: var(--primary);
   margin-bottom: 0.6rem;
 }
 
